@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition:.3s;
+}
+.navbar a:hover:before {
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding: 100px;
+    padding-top: 300px;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: black;
+    font-size: 100px;
+}
+p{
+    color: black;
+    font-size: 20px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: black;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+button{
+    color: white;
+    font-size: 20px;
+}
+
+button:hover,
+button:focus-visible{
+    background: gray;
+    color: black;
+}
+
+
+.circle{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black,black);
+    clip-path: circle(800px at right 900px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: opacity(0.7);
+  }
+  
+  .circle1{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white,black);
+    clip-path: circle(1000px at right 1000px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: opacity(0.7);
+  }
